@@ -1,4 +1,5 @@
-angular.module('app').services('sessionService', ['$window, sessionService']);on serviceSession($window){
+angular.module('app').service('sessionService', ['$window', sessionService]);
+function serviceSession($window){
     this.save = save;
     this.get = get;
     this.clear = clear;
